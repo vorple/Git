@@ -17,8 +17,8 @@ GLKMAKEFILE = Make.$(GLK)
 # Step 2: pick a C compiler.
 
 # Generic C compiler
-CC = cc -O2
-OPTIONS = 
+CC = emcc -O3
+OPTIONS = -DUSE_MMAP -DUSE_INLINE
 
 # Best settings for GCC 2.95. This generates faster code than
 # GCC 3, so you should use this setup if possible.

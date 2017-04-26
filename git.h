@@ -4,6 +4,8 @@
 #ifndef GIT_H
 #define GIT_H
 
+#include <emscripten.h>
+
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
