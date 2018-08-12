@@ -18,7 +18,7 @@ GLKMAKEFILE = Make.$(GLK)
 
 # Generic C compiler
 CC = emcc -O3
-OPTIONS = -DUSE_MMAP -DUSE_INLINE -s ALLOW_MEMORY_GROWTH=1
+OPTIONS = -DUSE_MMAP -DUSE_INLINE -s ALLOW_MEMORY_GROWTH=1 -s LEGACY_VM_SUPPORT=1
 
 # Best settings for GCC 2.95. This generates faster code than
 # GCC 3, so you should use this setup if possible.
